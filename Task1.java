@@ -1,7 +1,7 @@
 package HW1;
 
 public class Task1 {
-    //Вычислить n-е треугольное число и факториал n
+    //Вычислить n-е треугольное число и факториал n.
 
     public class task1 {
         public static void main(String[] args) {
