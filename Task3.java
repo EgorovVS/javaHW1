@@ -21,29 +21,13 @@ public class Task3 {
 
     }
 
-    public static double sum(int a, int b) {
-        return a + b;
-    }
-
-    public static double sub(int a, int b) {
-        return a - b;
-    }
-
-    public static double pow(int a, int b) {
-        return a * b;
-    }
-
-    public static double div(int a, int b) {
-        return a / b;
-    }
-
     public static double calc(int a, int b, String operand) {
-        return operand.equals("+") ? sum(a, b) : operand.equals("-") ? sub(a, b) : operand.equals("*") ? pow(a, b) : div(a, b);
+        return operand.equals("+") ? a + b : operand.equals("-") ? a - b : operand.equals("*") ? a * b : a / b;
     }
 
     public static void print(double answer) {
-        if(answer%1 == 0){
-            System.out.println((int)answer);
+        if (answer % 1 == 0) {
+            System.out.println((int) answer);
         } else {
             System.out.println(answer);
         }
